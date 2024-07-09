@@ -1,0 +1,57 @@
+.boton {
+    color: $blanco;
+    font-weight: $bold;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: $separacion / 2;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+
+    @include tablet {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+
+}
+.boton-amarillo {
+    background-color: $amarillo;
+    transition: font-size .4s ease;
+    &:hover{
+        background-color: $amarilloClaro;
+        font-size: 2.2rem;
+    }
+}
+.boton-amarillo-block{
+    background-color: $amarillo;
+    display: block;
+
+    &:hover{
+        background-color: $amarilloClaro;
+
+    }
+}
+.boton-verde {
+    background-color: $verde;
+    transition: font-size .4s ease;
+    &:hover{
+        background-color: $verdeClaro;
+        font-size: 2.2rem;
+    }
+}
+.boton-rojo-block{
+    background-color: $rojo;
+    display: block;
+    padding: 1.5rem;
+
+    &:hover{
+        background-color: $rojoClaro;
+
+    }
+}
